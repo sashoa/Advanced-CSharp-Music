@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Music.Model", "Music.Model\Music.Model.csproj", "{82A226CD-ED5F-45BA-B305-D0D85B895DF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Music.ConsoleUI", "Music.ConsoleUI\Music.ConsoleUI.csproj", "{C62338B7-9BA3-400C-9909-F97210ECCC8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Music.Data", "Music.Data\Music.Data.csproj", "{340C6F90-31C8-4885-B0F0-0FEA5045E7AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Music.Service", "Music.Service\Music.Service.csproj", "{E332B25C-DC8B-4550-A48F-BF1125A94CCA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82A226CD-ED5F-45BA-B305-D0D85B895DF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82A226CD-ED5F-45BA-B305-D0D85B895DF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82A226CD-ED5F-45BA-B305-D0D85B895DF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82A226CD-ED5F-45BA-B305-D0D85B895DF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C62338B7-9BA3-400C-9909-F97210ECCC8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C62338B7-9BA3-400C-9909-F97210ECCC8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C62338B7-9BA3-400C-9909-F97210ECCC8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C62338B7-9BA3-400C-9909-F97210ECCC8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{340C6F90-31C8-4885-B0F0-0FEA5045E7AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{340C6F90-31C8-4885-B0F0-0FEA5045E7AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{340C6F90-31C8-4885-B0F0-0FEA5045E7AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{340C6F90-31C8-4885-B0F0-0FEA5045E7AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E332B25C-DC8B-4550-A48F-BF1125A94CCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E332B25C-DC8B-4550-A48F-BF1125A94CCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E332B25C-DC8B-4550-A48F-BF1125A94CCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E332B25C-DC8B-4550-A48F-BF1125A94CCA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
