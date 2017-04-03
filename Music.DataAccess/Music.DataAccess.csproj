@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C62338B7-9BA3-400C-9909-F97210ECCC8C}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{DDB2B56F-6E77-422F-AE2A-C975ADA239E4}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Music.ConsoleUI</RootNamespace>
-    <AssemblyName>Music.ConsoleUI</AssemblyName>
+    <RootNamespace>Music.DataAccess</RootNamespace>
+    <AssemblyName>Music.DataAccess</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,28 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Repository.cs" />
+    <Compile Include="IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Music.BusinessLogic\Music.BusinessLogic.csproj">
-      <Project>{5f722620-3ec5-41e6-aaee-9a1c43e37588}</Project>
-      <Name>Music.BusinessLogic</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Music.DataAccess\Music.DataAccess.csproj">
-      <Project>{ddb2b56f-6e77-422f-ae2a-c975ada239e4}</Project>
-      <Name>Music.DataAccess</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Music.Entities\Music.Entities.csproj">
       <Project>{2d713488-cf42-4e1b-a1de-906cf10b7427}</Project>
       <Name>Music.Entities</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Music.Service\Music.Service.csproj">
-      <Project>{ba10f131-52e9-4475-8392-31c10e6ac08e}</Project>
-      <Name>Music.Service</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
