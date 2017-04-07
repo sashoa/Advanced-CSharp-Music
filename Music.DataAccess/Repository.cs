@@ -12,10 +12,10 @@ namespace Music.DataAccess
         private int Id;
         private List<T> entities;
 
-        public Repository()
+        public Repository(List<T> initialEntities)
         {
             Id = 1;
-            entities = new List<T>();
+            entities = initialEntities;
         }
         public T Save(T entity, int? id)
         {

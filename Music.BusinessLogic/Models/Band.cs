@@ -36,5 +36,10 @@ namespace Music.BusinessLogic.Models
         {
             Albums.Add(album);
         }
+
+        public override string ToString()
+        {
+            return Name;
+        }
     }
 }

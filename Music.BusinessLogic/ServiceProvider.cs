@@ -13,11 +13,11 @@ namespace Music.BusinessLogic
     public class ServiceProvider
     {
         // Default Repositories
-        public IRepository<BandEntity> BandRepository { get; set; } = new Repository<BandEntity>();
-        public IRepository<MusicianEntity> MusicianRepository { get; set; } = new Repository<MusicianEntity>();
-        public IRepository<AlbumEntity> AlbumRepository { get; set; } = new Repository<AlbumEntity>();
-        public IRepository<SongEntity> SongRepository { get; set; } = new Repository<SongEntity>();
-        public IRepository<MusicianInBandsEntity> MusicianInBandsRepository { get; set; } = new Repository<MusicianInBandsEntity>();
+        public IRepository<BandEntity> BandRepository { get; set; } = new Repository<BandEntity>(new List<BandEntity>());
+        public IRepository<MusicianEntity> MusicianRepository { get; set; } = new Repository<MusicianEntity>(new List<MusicianEntity>());
+        public IRepository<AlbumEntity> AlbumRepository { get; set; } = new Repository<AlbumEntity>(new List<AlbumEntity>());
+        public IRepository<SongEntity> SongRepository { get; set; } = new Repository<SongEntity>(new List<SongEntity>());
+        public IRepository<MusicianInBandsEntity> MusicianInBandsRepository { get; set; } = new Repository<MusicianInBandsEntity>(new List<MusicianInBandsEntity>());
 
 
         public IBandEntityService GetBandService()
@@ -39,6 +39,10 @@ namespace Music.BusinessLogic
         public IMusicianInBandsEntityService GetMusicianInBandsService()
         {
             return new MusicianInBandsEntityService(BandRepository, MusicianRepository, AlbumRepository, MusicianInBandsRepository, SongRepository);
+        }
+        public IJsonEntityService GetJsonService()
+        {
+            return new JsonEntityService(BandRepository, MusicianRepository, AlbumRepository, MusicianInBandsRepository, SongRepository);
         }
 
     }

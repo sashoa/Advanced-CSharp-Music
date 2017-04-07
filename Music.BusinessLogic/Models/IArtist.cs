@@ -13,5 +13,6 @@ namespace Music.BusinessLogic.Models
         List<Album> Albums { get; }
 
         void PublishAlbum(Album album);
+
     }
 }

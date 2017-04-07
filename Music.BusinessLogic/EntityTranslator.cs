@@ -11,13 +11,23 @@ namespace Music.BusinessLogic
 {
     public class EntityTranslator
     {
-        static ServiceProvider serviceProvider = new ServiceProvider();
+        static ServiceProvider serviceProvider;
 
-        static IBandEntityService bandService = serviceProvider.GetBandService();
-        static IMusicianEntityService musicianService = serviceProvider.GetMusicianService();
-        static IAlbumEntityService albumService = serviceProvider.GetAlbumService();
-        static ISongEntityService songService = serviceProvider.GetSongService();
-        static IMusicianInBandsEntityService musicianInBandsService = serviceProvider.GetMusicianInBandsService();
+        static IBandEntityService bandService; 
+        static IMusicianEntityService musicianService; 
+        static IAlbumEntityService albumService;
+        static ISongEntityService songService;
+        static IMusicianInBandsEntityService musicianInBandsService;
+
+        public EntityTranslator(ServiceProvider sp)
+        {
+            serviceProvider = sp;
+            bandService = sp.GetBandService();
+            musicianService = sp.GetMusicianService();
+            albumService = sp.GetAlbumService();
+            musicianInBandsService = sp.GetMusicianInBandsService();
+            songService = sp.GetSongService();
+        }
 
         public ServiceProvider ModelToEntity(IEnumerable<IArtist> artists)
         {

@@ -22,12 +22,17 @@ namespace Music.BusinessLogic.Models
         }
         public int Id { get; set; }
         public string Title { get; set; }
-        public int Duration { get; }
+        public int Duration { get; set; }
         public Album Album { get; set; }
 
         public Song()
         {
             Id = NextId;
+        }
+
+        public override string ToString()
+        {
+            return Title;
         }
     }
 }
